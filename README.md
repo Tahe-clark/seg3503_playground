@@ -38,11 +38,11 @@ java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --sc
 
 ### Screenshot — Tests JUnit
 
-capture test
+<img width="1408" height="702" alt="CaptureTEST1" src="https://github.com/user-attachments/assets/90e8c980-c8a4-474c-8c33-936c90d62866" />
 
 ### Screenshot — Exécution Java
 
-capture execution
+<img width="1128" height="226" alt="Java_run" src="https://github.com/user-attachments/assets/faabb7ff-435f-45d1-b1f4-6b0026e17359" />
 
 ---
 
@@ -78,11 +78,11 @@ mix test
 
 ### Screenshot — Tests ExUnit
 
-capture test 
+<img width="2362" height="1070" alt="CaptureTEST2" src="https://github.com/user-attachments/assets/cb5ac56d-24f5-4710-9c5a-7914d033f386" />
 
 ### Screenshot — Exécution Elixir
 
-capture execution
+<img width="1132" height="264" alt="Elixir_run" src="https://github.com/user-attachments/assets/864d0224-39dc-43e2-b296-7ff0f0c67ce5" />
 
 ---
 
