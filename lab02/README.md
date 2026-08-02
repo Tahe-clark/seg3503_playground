@@ -21,8 +21,6 @@ And visit http://localhost:8080/
 | --- | --- | --- | --- |
 | **1** | accepted | Formulaire rempli avec des données valides.<br>
 
-<br>
-
  | Pass |
 | **2** | Err3 | UserName trop court (<6 chars) et format d'Email invalide (`515@_AA`).<br>
 
