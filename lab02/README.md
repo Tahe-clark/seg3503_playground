@@ -1,20 +1,11 @@
-On run ceci dans le terminal:
+## Exercise 1: Web Application Testing
 
-photo
-
-on clique sur ce site: http://localhost:8080/
-
-*EXERCICE 1
-#EXERCICE 1
-
-| Cas de Test | Résultats Escomptés | Résultats Actuels | Verdict (Succès, Échec, Non-concluant) |
-| :--- | :--- | :--- | :--- |
-| **TC 1 : Cas nominal valide** <br>*(Entrées : ClarkT, Clark, Tahe, clark.tahe@uottawa.ca, 20, Gatineau, J8X 3X8)* | Inscription réussie (Accepte) | ![TC1](assets/tc01.png) | |
-| **TC 2 : Âge limite inférieur invalide** <br>*(Entrées : identiques au TC1 sauf Age = -1)* | Message d'erreur (Erreur) | ![TC2](assets/tc02.png) | |
-| **TC 3 : Âge limite supérieur invalide** <br>*(Entrées : identiques au TC1 sauf Age = 150)* | Message d'erreur (Erreur) | ![TC3](assets/tc03.png) | |
-| **TC 4 : Âge contenant des caractères non-numériques** <br>*(Entrées : identiques au TC1 sauf Age = 20ans)* | Message d'erreur (Erreur) | ![TC4](assets/tc04.png) | |
-| **TC 5 : Format de courriel invalide (sans @)** <br>*(Entrées : identiques au TC1 sauf Email = clark.tahe_uottawa.ca)* | Message d'erreur (Erreur) | ![TC5](assets/tc05.png) | |
-| **TC 6 : Code postal invalide (Format US)** <br>*(Entrées : identiques au TC1 sauf Postal Code = 12345)* | Message d'erreur (Erreur) | ![TC6](assets/tc06.png) | |
-| **TC 7 : Code postal canadien mal formaté** <br>*(Entrées : identiques au TC1 sauf Postal Code = J8X3X8 - sans espace)* | Message d'erreur ou correction automatique (À vérifier) | ![TC7](assets/tc07.png) | |
-| **TC 8 : Champ obligatoire manquant (UserName)** <br>*(Entrées : identiques au TC1 sauf UserName = vide)* | Message d'erreur (Erreur) | ![TC8](assets/tc08.png) | |
-
+| Test Case | Expected Results                         | Actual Results                                                                                | Verdict  |
+| :-------: | :--------------------------------------- | :-------------------------------------------------------------------------------------------- | :------: |
+|   **1**   | User registered successfully             | Valid inputs submitted.<br>![Form](assets/tc1_input.png)<br>![Success](assets/tc1_result.png) | **Pass** |
+|   **2**   | Reject invalid UserName and Email format | Invalid/empty UserName & wrong Email format (`515@_AA`).<br>![TC2](assets/tc2.png)            | **Pass** |
+|   **3**   | Reject invalid Postal Code format        | Postal Code set to `12345`. Error: `Wrong Postal Code format`.<br>![TC3](assets/tc3.png)      | **Pass** |
+|   **4**   | Reject empty Email                       | Email left blank. Error: `Wrong Email format`.<br>![TC4](assets/tc4.png)                      | **Pass** |
+|   **5**   | Reject missing Age                       | Age field empty. Error: `Age is mandatory`.<br>![TC5](assets/tc5.png)                         | **Pass** |
+|   **6**   | Reject Age > 64                          | Age set to `150`. Error: `must be less than or equal to 64`.<br>![TC6](assets/tc6.png)        | **Pass** |
+|   **7**   | Reject Age < 18                          | Age set to `-1`. Error: `must be greater than or equal to 18`.<br>![TC7](assets/tc7.png)      | **Pass** |
