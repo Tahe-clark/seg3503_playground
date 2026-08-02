@@ -17,29 +17,15 @@ And visit http://localhost:8080/
 
 ## Exercise 1
 
-| Test Case | Expected Results | Actual Results | Verdict(Pass,Fail,Inconclusive) |
-| --- | --- | --- | --- |
-| **1** | accepted | Formulaire rempli avec des données valides.<br>
-
- | Pass |
-| **2** | Err3 | UserName trop court (<6 chars) et format d'Email invalide (`515@_AA`).<br>
-
- | Pass |
-| **3** | Err Postal Code | Code postal au format invalide (`12345`).<br>
-
- | Pass |
-| **4** | Err Email | Champ Email laissé vide.<br>
-
- | Pass |
-| **5** | Err Age | Champ Âge laissé vide.<br>
-
- | Pass |
-| **6** | Err Age | Âge supérieur à la limite autorisée (`150`).<br>
-
- | Pass |
-| **7** | Err Age | Âge inférieur à la limite autorisée (`-1`).<br>
-
- | Pass |
+| Test Case | Expected Results | Actual Results | Verdict |
+| :---: | :--- | :--- | :---: |
+| **1** | Inscription réussie | Formulaire rempli avec des données valides.<br>![Formulaire valide](images/C1.png)<br>![Message de succès](images/CC8.png) | **Pass** |
+| **2** | Erreur UserName & Email | UserName trop court (<6 chars) et format d'Email invalide (`515@_AA`).<br>![Erreur UserName et Email](images/C9.png) | **Pass** |
+| **3** | Erreur Code Postal | Code postal au format invalide (`12345`).<br>![Erreur Code Postal](images/CC6.png) | **Pass** |
+| **4** | Erreur Email vide | Champ Email laissé vide.<br>![Erreur Email vide](images/CC5.png) | **Pass** |
+| **5** | Erreur Âge obligatoire | Champ Âge laissé vide.<br>![Erreur Age obligatoire](images/CC4.png) | **Pass** |
+| **6** | Erreur Âge > 64 | Âge supérieur à la limite autorisée (`150`).<br>![Erreur Age trop grand](images/CC3.png) | **Pass** |
+| **7** | Erreur Âge < 18 | Âge inférieur à la limite autorisée (`-1`).<br>![Erreur Age negatif](images/CC2.png) | **Pass** |
 
 ---
 
